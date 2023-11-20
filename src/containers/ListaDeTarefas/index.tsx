@@ -6,19 +6,19 @@ const tarefas = [
     titulo: 'Estudar TS',
     descricao: 'Ver a aula 3',
     prioridade: 'importante',
-    status: ' Pendente'
+    status: 'pendente'
   },
   {
     titulo: 'Pagar a net',
     descricao: 'Baixar fatura no email',
     prioridade: 'urgente',
-    status: ' concluida'
+    status: 'concluida'
   },
   {
     titulo: 'ir para academia',
     descricao: 'fazer treino B',
     prioridade: 'importante',
-    status: ' Pendente'
+    status: 'pendente'
   }
 ]
 
