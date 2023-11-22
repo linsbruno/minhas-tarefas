@@ -1,42 +1,27 @@
+import { useSelector } from 'react-redux'
 import Tarefa from '../../components/Tarefa'
 import { Container } from './styles'
 
-const tarefas = [
-  {
-    titulo: 'Estudar TS',
-    descricao: 'Ver a aula 3',
-    prioridade: 'importante',
-    status: 'pendente'
-  },
-  {
-    titulo: 'Pagar a net',
-    descricao: 'Baixar fatura no email',
-    prioridade: 'urgente',
-    status: 'concluida'
-  },
-  {
-    titulo: 'ir para academia',
-    descricao: 'fazer treino B',
-    prioridade: 'importante',
-    status: 'pendente'
-  }
-]
+import { RootReducer } from '../../store'
 
-const ListaDetarefas = () => (
-  <Container>
-    <ul>
-      {tarefas.map((t) => (
-        <li key={t.titulo}>
-          <Tarefa
-            descricao={t.descricao}
-            titulo={t.titulo}
-            status={t.status}
-            prioridade={t.prioridade}
-          />
-        </li>
-      ))}
-    </ul>
-  </Container>
-)
+const ListaDetarefas = () => {
+  const { tarefas } = useSelector((state: RootReducer) => state)
+  return (
+    <Container>
+      <ul>
+        {tarefas.map((t) => (
+          <li key={t.titulo}>
+            <Tarefa
+              descricao={t.descricao}
+              titulo={t.titulo}
+              status={t.status}
+              prioridade={t.prioridade}
+            />
+          </li>
+        ))}
+      </ul>
+    </Container>
+  )
+}
 
 export default ListaDetarefas
