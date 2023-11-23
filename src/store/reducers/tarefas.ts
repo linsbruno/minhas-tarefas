@@ -11,24 +11,31 @@ const initialState: TarefastState = {
   itens: [
     {
       id: 1,
-      descricao: 'Estudar canvas',
+      descricao: 'Estudar JavaScript revendo o exercicio do mosulo 7',
       prioridade: enums.Prioridade.NORMAL,
       status: enums.Status.CONCLUIDA,
-      titulo: 'Canvas'
+      titulo: 'Estudar JavaScript'
     },
     {
       id: 2,
-      descricao: 'Estudar JS',
+      descricao: 'Estudar material de apoio',
       prioridade: enums.Prioridade.NORMAL,
       status: enums.Status.PENDENTE,
-      titulo: 'JS'
+      titulo: 'Estudar TypeScript'
     },
     {
       id: 3,
-      descricao: 'Estudar CSS',
+      descricao: 'Praticar a construção de uma landing page',
       prioridade: enums.Prioridade.URGENTE,
       status: enums.Status.PENDENTE,
-      titulo: 'CSS'
+      titulo: 'Estudar Bootstrap'
+    },
+    {
+      id: 4,
+      descricao: 'Estudar ecmaScript 6',
+      prioridade: enums.Prioridade.URGENTE,
+      status: enums.Status.CONCLUIDA,
+      titulo: 'EcmaScript'
     }
   ]
 }
