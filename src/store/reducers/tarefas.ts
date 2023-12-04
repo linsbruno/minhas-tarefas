@@ -2,7 +2,6 @@ import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 import Tarefa from '../../models/Tarefa'
 
 import * as enums from '../../utils/enums/Tarefa'
-import { idText } from 'typescript'
 
 type TarefastState = {
   itens: Tarefa[]
